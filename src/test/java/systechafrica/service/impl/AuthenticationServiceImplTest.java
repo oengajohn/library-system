@@ -1,19 +1,19 @@
-package com.systechafrica.service.impl;
+package systechafrica.service.impl;
 
+import com.systechafrica.db.DatabaseHandler;
+import com.systechafrica.db.impl.DatabaseHandlerMySqlImpl;
+import com.systechafrica.service.AuthenticationService;
+import com.systechafrica.service.impl.AuthenticationServiceImpl;
 import java.sql.SQLException;
 import java.util.logging.Logger;
-
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 
-import com.systechafrica.db.DatabaseHandler;
-import com.systechafrica.db.impl.DatabaseHandlerMySqlImpl;
-import com.systechafrica.service.AuthenticationService;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class AuthenticationServiceImplTest {
 

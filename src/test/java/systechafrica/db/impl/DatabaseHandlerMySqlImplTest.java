@@ -1,6 +1,7 @@
-package com.systechafrica.db.impl;
+package systechafrica.db.impl;
 
 import com.systechafrica.db.DatabaseHandler;
+import com.systechafrica.db.impl.DatabaseHandlerMySqlImpl;
 import com.systechafrica.util.Config;
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -10,7 +11,9 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class DatabaseHandlerMySqlImplTest {
     DatabaseHandler databaseHandler;
